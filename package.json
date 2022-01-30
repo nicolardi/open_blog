@@ -1,0 +1,19 @@
+{
+  "name": "open_blog",
+  "version": "0.0.1",
+  "description": "This is an open source blog. I write about different open source projects and how to use them. I also write about other technology topics. I hope you find this blog helpful and informative.",
+  "main": "index.js",
+  "authors": {
+    "name": "Massimo Nicolardi",
+    "email": "nicolardi.massimo@gmail.com"
+  },
+  "repository": "https://github.com/nicolardi/open_blog/asdraban blog",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
