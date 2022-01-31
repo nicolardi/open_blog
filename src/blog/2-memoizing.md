@@ -82,6 +82,35 @@ If you want you can search the web about it. Here are just a few references
 
 [what-is-memoization-and-why-does-it-matter](https://www.cloudsavvyit.com/12446/what-is-memoization-and-why-does-it-matter/)
 
+## Let's have fun!
+
+If I ware a serious person I would have asked you to think about how you can improve that code.
+
+Since I am not I want to let you know about what has happened to the name memoize ;-)
+
+I have told you that it seemed to me like a typo... and well... I am not alone thinking that way!
+
+Let's see the history of the memoize.js file on github..
+
+Click here [lib/util/memoize.js](https://github.com/webpack/webpack/blame/main/lib/util/memoize.js) 
+
+Click on the "blame" buttom and have a look at the left hand side.
+
+There's a commit abot the function name...
+
+Clicking on it here's the commit
+
+[https://github.com/webpack/webpack/commit/bc1911bf78904f86488f5366f5b0558a2888cb11](https://github.com/webpack/webpack/commit/bc1911bf78904f86488f5366f5b0558a2888cb11)
+
+NO SPOILER HERE!!
+
+::: details
+The name is "Changed name of memorize function to memoize"
+
+@highonweb
+highonweb committed on 26 Dec 2020 
+::: 
+Yeee... BINGO!  You see? Reading code may be a real fun isn't it?
 
 Cheers!
 
