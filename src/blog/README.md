@@ -57,4 +57,4 @@ This blog wants just to be a track of my personal journey
 
 stay hungry stay foolish  <Cit. Steve Jobs>
 
-Massimo
+Massimo Nicolardi

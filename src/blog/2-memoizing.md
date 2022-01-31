@@ -43,7 +43,7 @@ it is a function (see @line1?) defined by the so called [arrow function](https:/
 This function accept a parameter named "fn" and returns...  oh... that's strange... it returns a function!
 
 Things are getting a little bit cumbersome here but it's perfectly legal...  there is a function which accepts a function and returns a function.
-All what this meand is that we are "wrapping" the function you pass with another function that performs some additional steps.
+All what this means is that we are "wrapping" the function you pass with another function that performs some additional steps.
 
 @line2 you can you can see a variable named "cache" which is initialized with false.
 What does it means? why are they defining a cache variable?
@@ -58,11 +58,11 @@ On @line9 things are getting clearer. If the cache variable is false (there's no
 Please remember that fn is the function that was passed to memoize as an argument. This function will stay accessible to the whole function code.  
 :::
 
-Things are getting clearer now! The code teached us what is memoize!
+Things are getting clearer now! The code teach us what is memoize!
 
 On @line10 cache is set to true; The next time this function will be called it will be executed the code @line7
 
-On @line13 fn is deallocated. The comment says that this is to cleanup memory (another thing that we have learned here).
+On @line13 fn is destroyed. The comment says that this is to cleanup memory (another thing that we have learned here).
 
 On @line14 the result is returned!
 
@@ -94,9 +94,9 @@ Let's see the history of the memoize.js file on github..
 
 Click here [lib/util/memoize.js](https://github.com/webpack/webpack/blame/main/lib/util/memoize.js) 
 
-Click on the "blame" buttom and have a look at the left hand side.
+Click on the "blame" button and have a look at the left hand side.
 
-There's a commit abot the function name...
+There's a commit about the function name...
 
 Clicking on it here's the commit
 
@@ -114,4 +114,4 @@ Yeee... BINGO!  You see? Reading code may be a real fun isn't it?
 
 Cheers!
 
-Massimo
+Massimo Nicolardi

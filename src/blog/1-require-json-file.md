@@ -70,4 +70,4 @@ $description = $composer['description'];
 ```
 Cheers!
 
-Massimo
+Massimo Nicolardi
