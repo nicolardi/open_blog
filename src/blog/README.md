@@ -12,7 +12,7 @@ At the time I was not addressing to open source code but to my mates's code whic
 ## I read the code
 
 Then I changed my job. And one of my new mates is a very experienced senior programmer.
-I consider (and I had many proves of this) him a genial programmer. He's not a friendly person. What I mean is that he has not the attitude to explain every detail but he gives advices.
+I consider (and I had many proves of this) him a genial programmer. He's not that kind of person who likes to explain things in details.
 
 I used to keep these advices pretty seriously. He sometimes says a sentence of about 10-20 words.
 Behind these words there is an entire ocean to discover.
