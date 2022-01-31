@@ -24,6 +24,9 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
+  markdown: {
+    lineNumbers: true
+  },
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -42,10 +45,6 @@ module.exports = {
         link: '/blog/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
         text: 'VuePress',
         link: 'https://v1.vuepress.vuejs.org'
       }
@@ -58,10 +57,11 @@ module.exports = {
           children: [
             '',
             '1-require-json-file',
+            '2-memoizing',
           ]
         }
       ],
-    }
+    },
   },
 
   /**

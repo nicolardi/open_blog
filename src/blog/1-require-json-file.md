@@ -1,4 +1,4 @@
-# Day1 - require package.json
+# Day 1 - require package.json
 
 There are a lot of examples of sources which include the .json package file
 
