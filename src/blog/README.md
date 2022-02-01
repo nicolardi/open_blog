@@ -29,12 +29,14 @@ On the browser, there were tons of files. A real nightmare. I felt overwhelmed a
 I went to sleep pretty depressing feeling very inadequate. 
 
 ## The key came from one english language course
-The next day I was trying to elaborate this feeling a little bit more and it came to my mind something that I have watched in a yt video some years about learning English by watching movies.
-They said that you cannot learn anything if you watch a video that you understand less than 90%.
+The next day I was trying to elaborate on this feeling. 
+It came to my mind an English course that I have watched some years ago.
+In learning English you cannot learn anything if you understand less than 90% of what the actors say in the dialogues.
 In other words, you cannot benefit from learning from a resource you don't understand almost at all.
 
 ## The second blood
-Back to webpack instead of trying to figure out the general picture I tried to look at tiny aspects driven by my curiosity.
+In the afternoon I decided to give it a try.  
+I opened the webpack source code again but instead of trying to figure out the general picture, I tried to look at tiny aspects driven by my curiosity.
 I started to open a file and read what was written inside. 
 I could not yet figure out what that code was doing but instead of trying to look at 1000 files, I was focusing on just one.
 
@@ -42,15 +44,14 @@ I started to ask myself why I was so confused reading that piece of code and I r
 
 I have heard those concepts hundreds of times but I figured out that I didn't know them at the core. So I stopped trying to read that code and I started reading small things "AROUND" that code.
 
-## The interesting things are always "AROUND"
-There is an entire ocean around the code that people write.
-This was the start of a big journey. I warn you that this journey has no end. You will learn incredible things;  things you have never dreamed about but you will never get to know everything.
-You will never get close to the end of the journey by any means but you will be a much more confident and better programmer than what was before.
+## The real documentation is the code itself
+This was the start of my journey in the ocean of open source code. There are lots of smart people who write interesting codes and I have learned very much from them.
 
-It's not simple... but the benefits are great
-I suggest you follow your heart and feed your mind with what you like to do and to learn driven by your curiosity.
+if you want to try You will learn incredible things;  things you have never dreamed about.
 
-This blog wants just to be a track of my personal journey
+You will never get close to the end of the journey by any means but you will be a much more confident and better programmer than what was before and You will soon probably discover that the real documentation is the code itself once you learn how to understand it. 
+
+This blog wants just to be a track of my personal journey and I hope it will be of some interest for others too.
 
 Stay hungry stay foolish  <Cit. Steve Jobs>
 

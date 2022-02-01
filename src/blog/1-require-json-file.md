@@ -1,24 +1,26 @@
 # Day 1 - require package.json
 
-There are a lot of examples of sources which include the .json package file
+I think that if you are a node programmer, you have used the require statement a lot.
+The classic use-case is to require a javascript file. 
 
-An example is in the generated source code of the vuepress project which is the software I create for this blog.
+Today I want to point out a different use-case. You can require a .json file!
+I noticed this on the configuration file of vuepress that is the software I use for this Blog.
 
-Let's dive into the code then!
+Here is the relevant line of code:
 
 ``` js
 const { description } = require('../../package')
 ```
 
-This code parses the package.json structure, picks the description field, and creates a constant variable named "description"
+As you can see this code parses the package.json file, picks the description field, and creates a constant variable named "description"
 
-What I find interesting about that is that you can create custom configurations directly inside the package.json instead of creating new configuration files.
+We can use the package.json to read static custom configurations without creating new configuration files.
 
 ## What is the require keyword?
-This question may sound silly but do you really know what is it?
+This question may sound pretty silly but do you really know what is it?
 
 The [require](/https://nodejs.org/docs/latest/api/modules.html/) keyword is part of the CommonJS modularization system.
-nodejs "native" relies on CommonJS as the standard way to modularize the source code. 
+nodejs "natively" relies on CommonJS as the standard way to modularize the source code. 
 
 The most common use case of require is including a js module.
 In this case, we are requiring a .json file and... it works
