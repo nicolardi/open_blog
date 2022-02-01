@@ -2,7 +2,7 @@
 
 There are a lot of examples of sources which include the .json package file
 
-On example is in the generated source code of the vuepress project which is the software I create this blog.
+An example is in the generated source code of the vuepress project which is the software I create for this blog.
 
 Let's dive into the code then!
 
@@ -10,7 +10,7 @@ Let's dive into the code then!
 const { description } = require('../../package')
 ```
 
-This code parses the package.json structure, picks the description field and creates a constant variable named "description"
+This code parses the package.json structure, picks the description field, and creates a constant variable named "description"
 
 What I find interesting about that is that you can create custom configurations directly inside the package.json instead of creating new configuration files.
 
@@ -21,7 +21,7 @@ The [require](/https://nodejs.org/docs/latest/api/modules.html/) keyword is part
 nodejs "native" relies on CommonJS as the standard way to modularize the source code. 
 
 The most common use case of require is including a js module.
-In this case we are requiring a .json file and... it works
+In this case, we are requiring a .json file and... it works
 
 You may notice that there is no file extension (there's no .json). 
 It guesses automatically the filename to open.
@@ -54,11 +54,11 @@ In my case the package.json is
   }
 }
 ```
-So the code creates a variable "description" and assigns the string "This is an open source blog. I write about different open source projects and how to use them. I also write about other technology topics. I hope you find this blog helpful and informative." picked directly from the package.json file
+So the code creates a variable "description" and assigns the string "This is an open-source blog. I write about different open source projects and how to use them. I also write about other technology topics. I hope you find this blog helpful and informative." picked directly from the package.json file
 
 ## Include & use composer.json with PHP
 
-The same approach is been used with PHP. 
+You can use the same approach with other languages like PHP for example. 
 You can simply decode the [composer.json](https://getcomposer.org/doc/04-schema.md) used by [composer](https://getcomposer.org/) to pick up any property you want.
 To do this you can do:
 
