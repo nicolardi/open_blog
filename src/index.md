@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/asdraban_avatar.png
+heroImage: /images/asdraban_avatar2.webp
 tagline: This is just a little experiment made to show what we can learn by reading the source code. I will try to keep each post pretty small focusing on things that are worth to note. Always enjoy the code!
 actionText: Let's see →
 actionLink: /blog/
