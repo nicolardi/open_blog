@@ -74,6 +74,7 @@ module.exports = {
             '',
             '1-require-json-file',
             '2-memoizing',
+            '3-keep-your-backend-secure'
           ]
         }
       ],
