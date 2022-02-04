@@ -89,7 +89,7 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     '@vuepress/google-analytics',
       {
-        'ga': 'G-8J0R1L6FZ7' 
+        'ga': 'UA-219142670-1' 
       },
     'social-share',
     {
