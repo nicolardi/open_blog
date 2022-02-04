@@ -74,7 +74,9 @@ module.exports = {
             '',
             '1-require-json-file',
             '2-memoizing',
-            '3-keep-your-backend-secure'
+            '3-keep-your-backend-secure',
+            '4-fixing-blog-google-analytics',
+
           ]
         }
       ],
@@ -89,7 +91,7 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     '@vuepress/google-analytics',
       {
-        'ga': 'G-8J0R1L6FZ7' 
+        'ga': 'UA-219142670-1' 
       },
     'social-share',
     {
