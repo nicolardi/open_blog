@@ -1,4 +1,4 @@
-# Day3 - keep your backend secure 
+# Day 3 - keep your backend secure 
 
 You are building a PHP website that depends on a lot of external libraries. How to know if there are security issues and how to keep your project safer?
 
