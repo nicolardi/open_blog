@@ -89,10 +89,11 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    '@vuepress/google-analytics',
+    ['@vuepress/google-analytics',
       {
         'ga': 'UA-219142670-1' 
-      },
+      }
+    ],
     'social-share',
     {
       networks: [ 'linkedin',
