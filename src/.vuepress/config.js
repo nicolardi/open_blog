@@ -74,7 +74,9 @@ module.exports = {
             '',
             '1-require-json-file',
             '2-memoizing',
-            '3-keep-your-backend-secure'
+            '3-keep-your-backend-secure',
+            '4-fixing-blog-google-analytics',
+
           ]
         }
       ],
@@ -87,10 +89,11 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    '@vuepress/google-analytics',
+    ['@vuepress/google-analytics',
       {
         'ga': 'UA-219142670-1' 
-      },
+      }
+    ],
     'social-share',
     {
       networks: [ 'linkedin',
