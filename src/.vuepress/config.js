@@ -76,6 +76,7 @@ module.exports = {
             '2-memoizing',
             '3-keep-your-backend-secure',
             '4-fixing-blog-google-analytics',
+            '5-react-php',
 
           ]
         }
