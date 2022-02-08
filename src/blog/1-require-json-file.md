@@ -1,4 +1,4 @@
-# Day 1 - require package.json
+# Day 1 - require package.json - nodejs
 
 I think that if you are a node programmer, you have used the require statement a lot.
 The classic use-case is to require a javascript file. 

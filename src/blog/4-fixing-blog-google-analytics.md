@@ -1,4 +1,4 @@
-# Day 4 - pointless fix for analytics
+# Day 4 - pointless fix for analytics -  vuepress
 
 ::: warning 
 This was a stupid error in the configuration file. Read this post just to learn something about node_modules structure and how to debug something
