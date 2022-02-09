@@ -1,58 +1,72 @@
 # Introduction
 
+::: tip
+Read the code! the real documentation is the code itself!
+:::
+
+[TL;DR]
+
 I am a passionate computer programmer since I was twelve. 
-During my life, I spent a lot of effort learning new languages, programming patterns, system architecture, and even video game development. I have used a lot of open-source projects but there was one thing missing.
-For years I faced the same kind of development problems trying to solve them in different ways to find "the right way" or "the right fit" and I have gained a good level of flexibility in this activity.
+During my life, I spent a lot of effort learning new languages, programming patterns, system architecture, and even video game development. 
 
-I have asked myself many times how to become confident reading other programmers' code.
-I looked for resources like yt channels and blogs but I have noticed that all these stuff were pretty general and do not cover real-life examples of reading the actual code.
+This blog is just a sort of "diary" of my journey in the the land of code.
 
-At the time I was not addressing open-source code but my mates' code which I find sometimes very hard to read and understand. The original question was "How can I become confident with an unknown large codebase".
+I have always had many difficulties trying to read a large codebase written by someone. I have tied very hard to develop the skill of reading reading other programmers' code. I have watched many youtube videos and web articles but I have noticed that all these stuff is pretty general and do not cover real-life examples of reading the actual code.
 
-## I read the code
+:::
+A change in life is always good 
+:::
 
-Then I changed my job. And one of my new mates is a very experienced senior programmer.
-I consider him a genial programmer but he's not the kind of person who likes to explain things in detail. He says little sentences leaving you with the entire ocean to discover by yourselves.
+Then I changed my job. 
 
-One time he said to me "I don't consider myself a good programmer. I have just one attitude. I read the code. So read the code!
-This sentence was a real revelation to me.
+And one of my new mates is a very experienced senior programmer.
+I consider him a genial programmer but he's not the kind of person who likes to explain things in detail.
 
-## Read the code... what does it mean?
+He says about himself "I don't consider myself a good programmer. I have just one attitude. I read the code. So read the code!"
 
-How does he do that? he is a very smart person but what's the trick? How can I try to do that?
-Then it came to my mind that during my life I have written tons of code using tons of open-source software but I have never read one of their source code. I realized that I don't know how all these projects and dependencies work in depth. 
 
-## The first blood
-One day I decided to try to see what's inside a repository on github.com. I have opened a random repository: webpack. 
-On the browser, there were tons of files. A real nightmare. I felt overwhelmed and it seemed I could never do that.
 
-I went to sleep pretty depressing feeling very inadequate. 
+::: tip 
+The first blood
+::: 
 
-## The key came from one english language course
-The next day I was trying to elaborate on this feeling. 
-It came to my mind an English course that I have watched some years ago.
-In learning English you cannot learn anything if you understand less than 90% of what the actors say in the dialogues.
-In other words, you cannot benefit from learning from a resource you don't understand almost at all.
+Following his advice I decided to try to read some code. I opened [github.com](https://www.github.com)  
+And I choose a random repository: [webpack](https://github.com/webpack/webpack).
 
-## The second blood
+Anywhere I clicked there were tons of files. I felt overwhelmed and it seemed I could never succeed. 
+I went to sleep quite depressed and feeling very inadequate. 
+
+::: tip
+The rule of 90%
+:::
+
+The next day I was wake up and tried to to elaborate a little bit more. It came to my mind a rule I learned many years ago when I was studying english.
+
+::: tip
+You cannot learn anything from movies you understand less of 90% 
+:::
+
+In other words, you cannot benefit from learning from a resource you don't know well.
+
+::: tip
+Second blood: let's try again!
+:::
 In the afternoon I decided to give it a try.  
-I opened the webpack source code again but instead of trying to figure out the general picture, I tried to look at tiny aspects driven by my curiosity.
-I started to open a file and read what was written inside. 
-I could not yet figure out what that code was doing but instead of trying to look at 1000 files, I was focusing on just one.
+I opened the webpack source code again but instead of trying to understand it I tried to identify little interesting things driven just by my own curiosity.
 
-I started to ask myself why I was so confused reading that piece of code and I realized that I was knowing less than 90% of what I was reading.
+Instead of trying to understand at 1000 files, I was focusing on just one of them. 
 
-I have heard those concepts hundreds of times but I figured out that I didn't know them at the core. So I stopped trying to read that code and I started reading small things "AROUND" that code.
+My attention fell on the things I didn't know...  whatever I could not explain well it was something to get into it.
 
-## The real documentation is the code itself
-This was the start of my journey in the ocean of open source code. There are lots of smart people who write interesting codes and I have learned very much from them.
+::: tip
+Often the real interesting things are not things you are looking at but what's around them 
+:::
 
-if you want to try You will learn incredible things;  things you have never dreamed about.
+This was the start of my journey in the ocean of open source code. 
+Finally I started figuring out how things REALLY work in the world of software. 
 
-You will never get close to the end of the journey by any means but you will be a much more confident and better programmer than what was before and You will soon probably discover that the real documentation is the code itself once you learn how to understand it. 
+Reading the code is an incredible source of inspiration. That's why I have had the idea to share this experience with all of you.
 
-This blog wants just to be a track of my personal journey and I hope it will be of some interest for others too.
-
-Stay hungry stay foolish  <Cit. Steve Jobs>
+Stay hungry stay foolish - Steve Jobs
 
 Massimo Nicolardi
