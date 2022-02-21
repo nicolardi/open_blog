@@ -99,7 +99,7 @@ module.exports = (options = {}, context) => ({
 
 
 ::: tip 
-Sometimes plugins are pretty small in size since they just "wrap" on other libraries that contains the business logic. In this case the "google analytics" code is contained in the enhanceAppFile.js. Have a look at it you you want to see how it's wrapped
+Sometimes plugins are pretty small in size since they just "wrap" other libraries that contains the business logic. In this case the "google analytics" code is contained in the enhanceAppFile.js. Have a look at it you you want to see how it's wrapped
 :::
 
 

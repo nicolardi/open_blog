@@ -77,6 +77,7 @@ module.exports = {
             '3-keep-your-backend-secure',
             '4-fixing-blog-google-analytics',
             '5-react-php',
+            '6-json-viewer-chrome-extension-1'
 
           ]
         }
