@@ -47,7 +47,7 @@ Have you ever wrongly interpreted the WPA password written on your router? here'
 
 on line 16 we can see the base-58 "alphabet":
 
-```c++
+```c
 static const char* pszBase58 = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
 ```
 
