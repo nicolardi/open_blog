@@ -10,7 +10,7 @@ So let's look at the sources of the [first commit](https://github.com/bitcoin/bi
 
 The original code is very different from current version. All the sources are contained in the main directory.
 ::: tip
-It is written in C++/C and the first version is v0.1.5 ALPHA and it is distributed under the MIT/X11 software license.
+It is written in C++/C and the first version is v0.1.5 ALPHA distributed under the MIT/X11 software license.
 :::
 
 The compilers originally used are:
@@ -22,7 +22,7 @@ It seems that it was first compiled on windows o.s.
 
 Let's look at the first file in alphabetical order [base58.h](https://github.com/bitcoin/bitcoin/blob/4405b78d6059e536c36974088a8ed4d9f0f29898/base58.h)
 
-```c++
+```c
 //
 // Why base-58 instead of standard base-64 encoding?
 // - Don't want 0OIl characters that look the same in some fonts and
@@ -33,14 +33,13 @@ Let's look at the first file in alphabetical order [base58.h](https://github.com
 //
 ```
 
-So this file contains an implementation of a base-58 ancoding where the characters "0OIl" have been excluded to avoid confusion for humans reading the code.
+So this file contains an implementation of a base-58 encoding where the characters "0OIl" have been excluded to avoid confusion for humans reading the bitcoin address and allowing double click selection at the same time.
 
 
 ::: tip
 Bitcoin addresses are 200 bits numbers (25 bytes). 
 To be more readable Bitcoin addresses are written in base58 instead of the more commonly used base64. In fact base58 was developed for Bitcoin. 
 :::
-
 
 ::: warning
 Have you ever wrongly interpreted the WPA password written on your router? here's the Satoshi Nakamoto's brilliant solution.
@@ -54,7 +53,7 @@ static const char* pszBase58 = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnop
 
 The library consists in the following functions:
 
-```c++
+```c
 inline string EncodeBase58(const unsigned char* pbegin, const unsigned char* pend)
 inline string EncodeBase58(const vector<unsigned char>& vch)
 inline bool DecodeBase58(const char* psz, vector<unsigned char>& vchRet)

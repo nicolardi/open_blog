@@ -78,7 +78,8 @@ module.exports = {
             '4-fixing-blog-google-analytics',
             '5-react-php',
             '6-json-viewer-chrome-extension-1',
-            '7-bitcoin-first-commit'
+            '7-bitcoin-first-commit',
+            '8-bitcoin-big-num'
 
           ]
         }
