@@ -72,14 +72,14 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            '1-require-json-file',
-            '2-memoizing',
-            '3-keep-your-backend-secure',
-            '4-fixing-blog-google-analytics',
-            '5-react-php',
-            '6-json-viewer-chrome-extension-1',
+            '8-bitcoin-big-num',
             '7-bitcoin-first-commit',
-            '8-bitcoin-big-num'
+            '6-json-viewer-chrome-extension-1',
+            '5-react-php',
+            '4-fixing-blog-google-analytics',
+            '3-keep-your-backend-secure',
+            '2-memoizing',
+            '1-require-json-file',
 
           ]
         }
