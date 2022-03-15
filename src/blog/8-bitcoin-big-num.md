@@ -128,6 +128,29 @@ the **explicit** keyword on line 11 simply tells the compiler to use that constr
 This to avoid unwanted type conversions
 :::
 
+@line 27 a vector named vchTmp is initialized
+
+```c
+vector<unsigned char> vchTmp(pend-pbegin+1, 0);
+```
+This initialization may sound strange. It is the standard way to create a std::vector with elements of type unsigned int widt the specified size (pend - pbegin +1) and filled with 0(s).
+
+The espression (pend - pbegin) subtracts the start-pointer address to the end-pointer address. Its is a way to calculate the length of the string we are encoding.
+
+@line 10 it reverses the string and put it into the vchTmp vector
+```c
+reverse_copy(pbegin, pend, vchTmp.begin());
+```
+
+[reverse_copy](https://www.geeksforgeeks.org/std-reverse_copy-in-c-stl/) is a std cpp library. 
+
+:::tip
+The comment says "Convert big endian data to little endian"
+
+Big endian and little endian are two specular ways to memorize data. The "big endian" is the way we are used to see the data. Say from left to right as we read.
+The "little endian" is the the opposite. 
+:::
+
 
 
 Cheers,
