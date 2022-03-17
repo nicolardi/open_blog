@@ -1,14 +1,14 @@
 # Day 7 : Bitcoin's first commit
 
-I am very interested in cryptocurrencies the mother of all being Bitcon.
-Bitcoin is a marvellous and misterious piece of code. 
+I am very interested in cryptocurrencies the mother of all being Bitcoin.
+Bitcoin is a marvelous and mysterious piece of code. 
 It was written by Satoshi Nakamoto but no one knows the real person behind this pseudonym.
 
-The first commit was uploaded to github on 30 aug 2009 and this moment is one of the most exciting and revolutionary of all times.
+The first commit was uploaded to GitHub on 30 Aug 2009 and this moment is one of the most exciting and revolutionary of all times.
 
 So let's look at the sources of the [first commit](https://github.com/bitcoin/bitcoin/tree/4405b78d6059e536c36974088a8ed4d9f0f29898)
 
-The original code is very different from current version. All the sources are contained in the main directory.
+The original code is very different from the current version. All the sources are contained in the main directory.
 ::: tip
 It is written in C++/C and the first version is v0.1.5 ALPHA distributed under the MIT/X11 software license.
 :::
@@ -26,7 +26,7 @@ Let's look at the first file in alphabetical order [base58.h](https://github.com
 //
 // Why base-58 instead of standard base-64 encoding?
 // - Don't want 0OIl characters that look the same in some fonts and
-//      could be used to create visually identical looking account numbers.
+//      could be used to create visually identical-looking account numbers.
 // - A string with non-alphanumeric characters is not as easily accepted as an account number.
 // - E-mail usually won't line-break if there's no punctuation to break at.
 // - Doubleclicking selects the whole number as one word if it's all alphanumeric.
@@ -38,11 +38,11 @@ So this file contains an implementation of a base-58 encoding where the characte
 
 ::: tip
 Bitcoin addresses are 200 bits numbers (25 bytes). 
-To be more readable Bitcoin addresses are written in base58 instead of the more commonly used base64. In fact base58 was developed for Bitcoin. 
+To be more readable Bitcoin addresses are written in base58 instead of the more commonly used base64. In fact, base58 was developed for Bitcoin. 
 :::
 
 ::: warning
-Have you ever wrongly interpreted the WPA password written on your router? here's the Satoshi Nakamoto's brilliant solution.
+Have you ever wrongly interpreted the WPA password written on your router? here's Satoshi Nakamoto's brilliant solution.
 :::
 
 on line 16 we can see the base-58 "alphabet":
@@ -51,7 +51,7 @@ on line 16 we can see the base-58 "alphabet":
 static const char* pszBase58 = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
 ```
 
-The library consists in the following functions:
+The library consists of the following functions:
 
 ```c
 inline string EncodeBase58(const unsigned char* pbegin, const unsigned char* pend)

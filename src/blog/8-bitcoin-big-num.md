@@ -48,7 +48,7 @@ Line 4 is pretty interesting... what does it mean?
 CBigNum bn58 = 58;
 ```
 
-Well CBigNum is a bitcoin's class indeed. 
+Well, CBigNum is a bitcoin class indeed. 
 
 What does it mean the above assignment? 
 
@@ -69,7 +69,7 @@ public:
  ....
 ```
 
-You can see that CBigNum actually extends BIGNUM. This class is from the openssl library.
+You can see that CBigNum extends BIGNUM. This class is from the OpenSSL library.
 In the readme file is stated:
 
 ```c
@@ -77,7 +77,7 @@ This product includes software developed by the OpenSSL Project for use in
 the OpenSSL Toolkit (http://www.openssl.org/).
 ```
 
-In other words instead of rewriting the whole library Satoshi Nakamoto chose to extend a stable and widely used library.
+In other words, instead of rewriting the whole library Satoshi Nakamoto chose to extend a stable and widely used library.
 The CBigNum simply adds functionalities to it like for example a bunch of different constructors and operator overloading.
 
 :::tip
@@ -135,7 +135,7 @@ vector<unsigned char> vchTmp(pend-pbegin+1, 0);
 ```
 This initialization may sound strange. It is the standard way to create a std::vector with elements of type unsigned int widt the specified size (pend - pbegin +1) and filled with 0(s).
 
-The espression (pend - pbegin) subtracts the start-pointer address to the end-pointer address. Its is a way to calculate the length of the string we are encoding.
+The expression (pend - pbegin) subtracts the start-pointer address to the end-pointer address. It is a way to calculate the length of the string we are encoding.
 
 @line 10 it reverses the string and put it into the vchTmp vector
 ```c
@@ -145,10 +145,10 @@ reverse_copy(pbegin, pend, vchTmp.begin());
 [reverse_copy](https://www.geeksforgeeks.org/std-reverse_copy-in-c-stl/) is a std cpp library. 
 
 :::tip
-The comment says "Convert big endian data to little endian"
+The comment says "Convert big-endian data to little-endian"
 
-Big endian and little endian are two specular ways to memorize data. The "big endian" is the way we are used to see the data. Say from left to right as we read.
-The "little endian" is the the opposite. 
+Big-endian and little-endian are two specular ways to memorize data. The "big-endian" is the way we are used to seeing the data. Say from left to right as we read.
+The "little-endian" is the opposite. 
 :::
 
 
