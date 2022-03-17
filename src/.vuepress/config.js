@@ -72,6 +72,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
+            '9-javascript-self-invoking-functions',
             '8-bitcoin-big-num',
             '7-bitcoin-first-commit',
             '6-json-viewer-chrome-extension-1',
