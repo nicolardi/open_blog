@@ -4,7 +4,7 @@
 Today I will have a look at the sources of the [json viewer](https://github.com/tulios/json-viewer) which is present on the [chrome extensions website](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh) ![JSONViewer Logo](https://raw.githubusercontent.com/tulios/json-viewer/master/logo.png)
 
 
-What the extension does is to identify and format any json present on a web page and "beautify" them. You can see it in action: 
+What the extension does is identify and format any JSON present on a web page and "beautify" them. You can see it in action: 
 
 ![screenshot](https://raw.githubusercontent.com/tulios/json-viewer/master/screenshot.png)
 
@@ -16,10 +16,10 @@ The first things I have learned from this project are from the README.md file
 
 I noticed the url: https://raw.githubusercontent.com
 
-This suggests that the files on a github repo are public accessible on the https://raw.githubusercontent.com domain. This is why it is possible to display the image using the above link
+This suggests that the files on a github repo are publicly accessible on the https://raw.githubusercontent.com domain. This is why it is possible to display the image using the above link
 
 ::: tip
-Writing the question mark at the start it will display the image. If you omit the question mark it will print "screenshot" linked to the url written inside the rounded brackets
+Writing the question mark at the start will display the image. If you omit the question mark it will print "screenshot" linked to the URL written inside the rounded brackets
 :::
 
 ```
@@ -31,7 +31,7 @@ Features:
 ```
 
 ::: tip 
-With the markdown format you can use * to create an unordered list item
+With the markdown format, you can use * to create an unordered list item
 :::
 
 Let's look at the [sources homepage](https://github.dev/tulios/json-viewer) 
@@ -72,7 +72,7 @@ I can see that there is a webpack configuration file and a package.json. Let's h
 The package is declared as "private" ("private": true) [see](https://stackoverflow.com/questions/67758397/what-is-meant-by-private-true-or-private-false-in-package-json) 
 It means that it will not be available via [npmjs.com](https://npmjs.com) 
 
-In the dependecies we have:
+In the dependencies we have:
 
 * [archiver](https://www.npmjs.com/package/archiver): creates archives like zip files
 * [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin): this webpack plugin will remove all files inside webpack's output.path
@@ -92,7 +92,7 @@ In the dependecies we have:
 Most of these deps are used to create a package using webpack. 
 I think that codemirror is used to beautify the JSON output
 
-What's interesting here is archiver that is a node package to create archives (zip) for example, clean-webpack-plugin that (as I can understand from the description) makes webpack create multiple file instead of just one.
+What's interesting here is archiver that is a node package to create archives (zip) for example, clean-webpack-plugin that (as I can understand from the description) makes webpack create multiple files instead of just one.
 
 The "scripts" key in package.json gives us the way to build and release. 
 release sets th NODE_ENV variable to production and calls run build. What's strange here is that there is no separation (for example &&) between "NODE_ENV=production" and "npm run build". 
