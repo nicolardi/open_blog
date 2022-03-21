@@ -36,7 +36,7 @@ I can verify in my node_modules directory that the plugin has been installed
 The path is: @vuepress/plugin-google-analytics
 
 ::: tip
-When you install a package using yarn or npm it will install it following the path of the npm package even if the directories are nested. You can see here that the @vuepress directory contains the project code together with the plugins code even if they are published in different packages 
+When you install a package using yarn or npm it will install it following the path of the npm package even if the directories are nested. You can see here that the @vuepress directory contains the project code together with the code of the plugin even if they are published in different packages 
 :::
 
 Here's the package.json 
@@ -99,7 +99,7 @@ module.exports = (options = {}, context) => ({
 
 
 ::: tip 
-Sometimes plugins are pretty small in size since they just "wrap" other libraries that contains the business logic. In this case the "google analytics" code is contained in the enhanceAppFile.js. Have a look at it you you want to see how it's wrapped
+Sometimes plugins are pretty small in size since they just "wrap" other libraries that contain the business logic. In this case, the "google analytics" code is contained in the enhanceAppFile.js. Have a look at it you want to see how it's wrapped
 :::
 
 
@@ -116,7 +116,7 @@ which one is not null
 
 @line 10: defines a constant GA_ID which is ga (the config's one) or false if ga is null
 
-@line11: it resturns the google analytics id
+@line11: it returns the google analytics id
 
 So this code just returns google analytics ID read from the configuration.
 
@@ -126,7 +126,7 @@ Let's do something really weird now!
 
 Let's change the source code node_modules/@vuepress/plugin-google-analytics 
 
-I am just adding a console.log and see what's the ID like
+I am just adding a console.log and seeing what's the ID like
 
 ``` js 
 define () {
@@ -139,7 +139,7 @@ define () {
 ```
 
 
-Let's stop and the restart the server and run yarn build instead.
+Let's stop and restart the server and run yarn build instead.
 The logged message is:
 
 ``` js 
@@ -153,7 +153,7 @@ How does it work the plugin system in vuepress?
 Let's read the code... what
 
 
-Let's open the sources in [visual studio code online](https://github.dev/vuejs/vuepres) directly from github
+Let's open the sources in [visual studio code online](https://github.dev/vuejs/vuepres) directly from GitHub
 
 ::: tip
 Any project on github.com can be seen with vscode just pressing the dot "." from the repo homepage. 
@@ -185,7 +185,7 @@ I found the data... but where does it get "lost"?
 
 Let's dive into the code again...
 
-In the same file there's an initialize function which does a forEach on the _pluginQueue.
+In the same file, there's an initialize function that does a forEach on the _pluginQueue.
 I decided to give it a try and to add a console.log
 
 ```js 
@@ -204,7 +204,7 @@ nitialize () {
 ```
 
 Running yarn build I can see lots of interesting things. 
-In particular there are a couple of entries quite interesting
+In particular, there are a couple of entries quite interesting
 
 ```js 
   {
@@ -238,7 +238,7 @@ the code runs on each loop cycle
 this.applyPlugin(plugin)
 ```
 
-I'am asking myself if the fact that "data" is contained in another entry may originate the problem
+I'm asking myself if the fact that "data" is contained in another entry may originate the problem
 
 The answer is in the code of course
 
@@ -302,7 +302,7 @@ applyPlugin ({
   }
 ```
 
-What I can see is that this function accept just one parameter and extracts a lots of variables out of it
+What I can see is that this function accept just one parameter and extracts a lot of variables out of it
 
 I want to concentrate on the "data".
 
@@ -328,7 +328,7 @@ What does it mean?
 That the name key is replaced with the alias name pluginName
 :::
 
-You see all these registerOption?
+Do you see all these registerOption?
 
 I have added a console.log that function 
 
@@ -423,7 +423,7 @@ What have I gained from this?
 
 If I want to write a vuepress plugin I know how to do that.
 
-This is the real value in this amd I am feeling pretty good
+This is the real value in this and I am feeling pretty good
 
 Thanks for having read all this stuff!
 
