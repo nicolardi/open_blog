@@ -35,7 +35,7 @@ Here I am skipping all the unnecessary code
 @line 1 the function is defined. Please note the presence of the surrounding round brackets.
 The function is anonymous and it has a single parameter named global. 
 
-@line 7 the function is invoked immediately. Note that the "self" keyword is used to refer to the global object.
+@line 7 the function is invoked immediately. Note that the "self" keyword is used to refer to the global object which is most of the time window in the browser.
 
 @line 4 there is an interesting use of the "in" keyword. It is used to check if a variable is defined in an object.
 
