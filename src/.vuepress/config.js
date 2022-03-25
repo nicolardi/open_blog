@@ -72,6 +72,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
+            '10-node-ipc-protestware',
             '9-javascript-self-invoking-functions',
             '8-bitcoin-big-num',
             '7-bitcoin-first-commit',
